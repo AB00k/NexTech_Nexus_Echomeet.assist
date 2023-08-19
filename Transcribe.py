@@ -1,20 +1,20 @@
 import os
-import sounddevice as sd
 from elevenlabs import generate , play
 from LLM import *
+from Audio import *
 
 
 
 def transcribe_audio():
     text = None
 
-    segments, info = audio_transcribe_model.transcribe("C:\\Users\\ar\\Desktop\\Code\\Python\\recording.wav")
+    segments, info = audio_transcribe_model.transcribe(rec_path)
 
 
     for segment in segments:
         text = segment.text
 
-    os.remove("C:\\Users\\ar\\Desktop\\Code\\Python\\recording.wav")
+    os.remove(rec_path)
 
     return text
 
