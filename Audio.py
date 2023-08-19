@@ -1,6 +1,20 @@
 import sounddevice as sd
 import numpy as np
 import wave
+import os
+
+# Get the current directory of your script
+script_directory = os.path.dirname(os.path.realpath(__file__))
+
+# Navigate up one directory to the parent directory
+parent_directory = os.path.dirname(script_directory)
+
+# Navigate up one Directory again to reach recording Directory
+rec_directory= os.path.dirname(parent_directory)
+
+# Construct the path to the voice file in the parent directory
+rec_path = os.path.join(rec_directory, "recording.wav")
+
 
 class AudioRecorder:
     def __init__(self):
@@ -39,20 +53,8 @@ class AudioRecorder:
         wf = wave.open(output_file, 'wb')
         wf.setnchannels(1)
         wf.setsampwidth(2)  # 2 bytes per sample (16-bit audio)
-        wf.setframerate(44100)  # Sample rate of 44100 Hz
-
+        wf.setframerate(44100) #Setting the Sampling rate
         wf.writeframes(audio_data.tobytes())
         wf.close()
 
         print(f"Audio saved to '{output_file}'.")
-
-'''if __name__=="__main__":
-    recorder = AudioRecorder()
-    while True:
-        print("\n1. Press Enter to Start Recording\n2. Exit")
-        choice = input("Enter your choice: ")
-
-        if choice == '':
-            recorder.start_recording()
-        elif choice == '2':
-            break'''
