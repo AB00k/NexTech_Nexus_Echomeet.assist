@@ -1,20 +1,19 @@
 import os
 from elevenlabs import generate , play
 from LLM import *
-from Audio import *
 
 
 
 def transcribe_audio():
     text = None
 
-    segments, info = audio_transcribe_model.transcribe(rec_path)
+    segments, info = audio_transcribe_model.transcribe("recording.wav")
 
 
     for segment in segments:
         text = segment.text
 
-    os.remove(rec_path)
+    os.remove("recording.wav")
 
     return text
 
@@ -26,3 +25,5 @@ def play_audio(text):
         model='eleven_multilingual_v1'
     )
     play(audio)
+
+print(transcribe_audio())
