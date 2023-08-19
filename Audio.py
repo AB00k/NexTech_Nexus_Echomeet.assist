@@ -1,19 +1,6 @@
 import sounddevice as sd
 import numpy as np
 import wave
-import os
-
-# Get the current directory of your script
-script_directory = os.path.dirname(os.path.realpath(__file__))
-
-# Navigate up one directory to the parent directory
-parent_directory = os.path.dirname(script_directory)
-
-# Navigate up one Directory again to reach recording Directory
-rec_directory= os.path.dirname(parent_directory)
-
-# Construct the path to the voice file in the parent directory
-rec_path = os.path.join(rec_directory, "recording.wav")
 
 
 class AudioRecorder:
