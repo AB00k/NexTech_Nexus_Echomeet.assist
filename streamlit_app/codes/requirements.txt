@@ -1,0 +1,15 @@
+faster_whisper
+elevenlabs
+xformers
+langchain
+auto_gptq==0.2.0
+transformers
+bitsandbytes
+accelerate
+openai
+ffmpeg
+sounddevice
+numpy
+wave
+streamlit
+python-dotenv
