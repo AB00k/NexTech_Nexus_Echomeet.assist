@@ -8,3 +8,4 @@ wave
 streamlit
 SpeechRecognition 
 pydub
+python-dotenv
