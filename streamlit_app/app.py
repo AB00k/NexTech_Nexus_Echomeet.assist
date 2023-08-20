@@ -1,9 +1,7 @@
 import streamlit as st
 from modules import login, footer, main
-import os
 
 def main_app():
-    os.system("pip install -r streamlit_app/codes/requirements.txt")
     session_state = st.session_state
     # Left Sidebar
     login.display_login_sidebar()
