@@ -3,6 +3,7 @@ from codes.Audio import AudioRecorder
 from codes.Transcribe import *
 from codes.Agent_implementation import *
 
+
 #Initializing Audio Object
 audio_recorder=AudioRecorder()
 
@@ -26,8 +27,8 @@ def display_footer():
                         session_state.recording = True
                 else:
                     if st.button("Stop"):
-                        #implementing Recording Stop backend
                         audio_recorder.stop_recording("recording.wav")
+
                         user_transcribed_message = transcribe_audio()
                         session_state.chat_messages.append({"role": "user", "content": user_transcribed_message})
                         
