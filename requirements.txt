@@ -6,3 +6,8 @@ auto_gptq==0.2.0
 transformers
 bitsandbytes
 accelerate
+openai
+ffmpeg
+sounddevice
+numpy
+wave

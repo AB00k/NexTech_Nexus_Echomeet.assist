@@ -16,9 +16,9 @@ while True:
         exit = 'Good Bye'
         play_audio(exit)
         break
+          
       response = agent.run(text)
       print(f"Agent: {response}")
       play_audio(response)
     else:
       break
-
