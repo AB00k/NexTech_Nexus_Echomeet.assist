@@ -1,12 +1,10 @@
-from codes.LLM import *
+from LLM import *
 from langchain.agents.agent_toolkits import ZapierToolkit
 from langchain.utilities.zapier import ZapierNLAWrapper
 from langchain.agents import initialize_agent
 from langchain.agents import AgentType
 
-
-ZAPIER_API_KEY="sk-ak-IOi22QQhkYLEphxT6ue8ASelM9"
-zapier = ZapierNLAWrapper(zapier_nla_api_key=ZAPIER_API_KEY)
+zapier = ZapierNLAWrapper(zapier_nla_api_key="sk-ak-IOi22QQhkYLEphxT6ue8ASelM9")
 toolkit = ZapierToolkit.from_zapier_nla_wrapper(zapier)
 
 
