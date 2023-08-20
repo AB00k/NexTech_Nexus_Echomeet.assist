@@ -2,6 +2,7 @@ import sounddevice as sd
 import numpy as np
 import wave
 
+
 class AudioRecorder:
     def __init__(self):
         self.recording = False
@@ -39,20 +40,10 @@ class AudioRecorder:
         wf = wave.open(output_file, 'wb')
         wf.setnchannels(1)
         wf.setsampwidth(2)  # 2 bytes per sample (16-bit audio)
-        wf.setframerate(44100)  # Sample rate of 44100 Hz
-
+        wf.setframerate(44100) #Setting the Sampling rate
         wf.writeframes(audio_data.tobytes())
         wf.close()
 
         print(f"Audio saved to '{output_file}'.")
 
-'''if __name__=="__main__":
-    recorder = AudioRecorder()
-    while True:
-        print("\n1. Press Enter to Start Recording\n2. Exit")
-        choice = input("Enter your choice: ")
 
-        if choice == '':
-            recorder.start_recording()
-        elif choice == '2':
-            break'''

@@ -1,0 +1,10 @@
+elevenlabs
+langchain
+openai
+ffmpeg
+sounddevice
+numpy
+wave
+streamlit
+SpeechRecognition 
+pydub

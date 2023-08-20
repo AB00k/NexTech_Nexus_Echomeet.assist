@@ -1,0 +1,41 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 15%;  
+    width: 85%;  
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    z-index: -1;
+}
+
+.dashboard-content {
+    padding-bottom: 200px;
+}
+
+/* General styles for the chat area */
+.main-content {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Styles for user messages */
+.user-message {
+    max-width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 8px 8px 8px 0;
+}
+
+/* Styles for bot messages */
+.bot-message {
+    max-width: 80%;
+    padding: 10px;
+    margin: 5px 20%;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 8px 8px 0 8px;
+}
