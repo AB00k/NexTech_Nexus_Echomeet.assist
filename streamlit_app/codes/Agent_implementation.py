@@ -4,7 +4,7 @@ from langchain.utilities.zapier import ZapierNLAWrapper
 from langchain.agents import initialize_agent
 from langchain.agents import AgentType
 
-zapier = ZapierNLAWrapper(zapier_nla_api_key="sk-ak-IOi22QQhkYLEphxT6ue8ASelM9")
+zapier = ZapierNLAWrapper(zapier_nla_api_key="")
 toolkit = ZapierToolkit.from_zapier_nla_wrapper(zapier)
 
 
