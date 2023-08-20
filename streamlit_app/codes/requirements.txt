@@ -12,3 +12,4 @@ sounddevice
 numpy
 wave
 streamlit
+python-dotenv
