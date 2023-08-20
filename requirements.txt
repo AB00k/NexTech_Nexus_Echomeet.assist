@@ -11,3 +11,4 @@ ffmpeg
 sounddevice
 numpy
 wave
+streamlit
