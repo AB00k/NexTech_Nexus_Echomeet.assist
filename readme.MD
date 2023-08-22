@@ -19,7 +19,7 @@ Welcome to the Voice-powered Assistant, a cutting-edge project by Nextech-Nexus!
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd voice-powered-assistant
+   cd streamlit_app/codes
 
 3. **Install Dependencies**:
    Make sure you have `pip` installed. Then, use the following command to install the necessary dependencies from the `requirements.txt` file:
