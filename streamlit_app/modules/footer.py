@@ -21,7 +21,6 @@ def display_footer():
                         #Implementing Recording backend
                         audio_recorder.start_recording()
                         session_state.recording = True
-                        st.write("Recording")
                         st.experimental_rerun()
             else:
                 if st.button("Stop"):
