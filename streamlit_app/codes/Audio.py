@@ -18,10 +18,6 @@ class AudioRecorder:
                     print("Error:", status)
                 self.audio_data.append(indata.copy())
 
-            with sd.InputStream(callback=callback, samplerate=20000):
-                print("Recording started. Press Enter to stop recording...")
-                input()
-
             self.recording = False
             self.stop_recording("recording.wav")
 
@@ -42,7 +38,6 @@ class AudioRecorder:
         wf.setframerate(44100) #Setting the Sampling rate
         wf.writeframes(audio_data.tobytes())
         wf.close()
-
-        print(f"Audio saved to '{output_file}'.")
+        return
 
 
