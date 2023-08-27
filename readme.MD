@@ -15,7 +15,7 @@ Welcome to the Voice-powered Assistant, a cutting-edge project by Nextech-Nexus!
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Nextech-Nexus/voice-powered-assistant.git
+   git clone https://github.com/AB00k/NexTech_Nexus
 
 2. **Navigate to the Project Directory**:
    ```bash
