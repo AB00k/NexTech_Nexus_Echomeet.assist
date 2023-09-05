@@ -15,8 +15,7 @@ Welcome to the Voice-powered Assistant, a cutting-edge project by Nextech-Nexus!
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/AB00k/NexTech_Nexus
-
+   git clone https://github.com/AB00k/NexTech_Nexus_Echomeet.assist.git
 2. **Navigate to the Project Directory**:
    ```bash
    cd streamlit_app/codes
